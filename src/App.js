@@ -278,9 +278,9 @@ const Skills = () => {
 const Contact = () => {
   const getIcon = (name) => {
     switch(name) {
-      case 'Instagram': return <Instagram size={30} />;
-      case 'LinkedIn': return <Linkedin size={30} />;
-      case 'Youtube': return <Youtube size={30} />;
+      case 'Instagram': return <Instagram size={20} />;
+      case 'LinkedIn': return <Linkedin size={20} />;
+      case 'Youtube': return <Youtube size={20} />;
       default: return null;
     }
   };
@@ -297,7 +297,7 @@ const Contact = () => {
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-white d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
-                style={{ width: '60px', height: '60px', backgroundColor: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)' }}
+                style={{ width: '40px', height: '40px', backgroundColor: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)' }}
               >
                 {getIcon(social.name)}
               </a>
