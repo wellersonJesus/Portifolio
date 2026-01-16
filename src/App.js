@@ -176,27 +176,20 @@ const Experience = () => {
   const sortedExperiences = PortifolioData.experiences;
 
   return (
-    <section id="experiencia" className="py-5" style={{ backgroundColor: '#f0f8ff', fontFamily: "'Fredoka', sans-serif", overflowX: 'hidden' }}>
-      <Container fluid="lg">
+    <section id="experiencia" className="py-5" style={{ backgroundColor: '#f0f8ff', fontFamily: "'Fredoka', sans-serif" }}>
+      <Container>
         <h2 className="text-center mb-5 display-4" style={{ color: '#111151' }}>Experiência Profissional</h2>
         
-        <div className="position-relative py-4">
-            {/* Linha contínua (estilo Jornada) */}
-            <div className="d-none d-lg-block position-absolute top-50 start-0 w-100 translate-middle-y" style={{ height: '4px', backgroundColor: '#293237', opacity: 0.5, borderRadius: '2px' }}></div>
-
-            <div className="d-flex flex-column flex-lg-row flex-lg-nowrap justify-content-center align-items-center gap-4">
-                {sortedExperiences.map((exp, index) => (
-                    <React.Fragment key={index}>
+        <Row className="justify-content-center g-4">
+            {sortedExperiences.map((exp, index) => (
+                <Col key={index} md={6} lg={4} className="d-flex align-items-stretch">
                     <div 
-                        className="position-relative p-3 bg-white rounded-4 shadow-lg" 
+                        className="position-relative p-4 bg-white rounded-4 shadow-lg w-100" 
                         style={{ 
-                            width: '150px', 
-                            minWidth: '150px',
                             border: '4px solid #293237',
-                            zIndex: 10 - index
                         }}
                     >
-                        <div className="position-absolute top-0 start-50 translate-middle badge rounded-pill shadow px-2 py-1" style={{ backgroundColor: '#ffffff', color: '#111151', border: '2px solid #293237', fontSize: '0.75rem', width: 'max-content' }}>
+                        <div className="position-absolute top-0 start-50 translate-middle badge rounded-pill shadow px-3 py-2" style={{ backgroundColor: '#ffffff', color: '#111151', border: '2px solid #293237', fontSize: '0.85rem', width: 'max-content' }}>
                             {exp.period.includes('Atuante') ? (
                                 <>
                                     {exp.period.replace('Atuante', '')}
@@ -204,28 +197,13 @@ const Experience = () => {
                                 </>
                             ) : exp.period}
                         </div>
-                        <h6 className="fw-bold mt-3 text-center" style={{ color: '#111151', fontSize: '1rem' }}>{exp.role}</h6>
-                        <div className="text-center text-muted fst-italic mb-2" style={{ fontSize: '0.8rem' }}>@ {exp.company}</div>
-                        <p className="text-center mb-0" style={{ lineHeight: '1.2', fontSize: '0.75rem' }}>{exp.description}</p>
+                        <h5 className="fw-bold mt-4 text-center" style={{ color: '#111151' }}>{exp.role}</h5>
+                        <div className="text-center text-muted fst-italic mb-3">@ {exp.company}</div>
+                        <p className="text-center mb-0" style={{ lineHeight: '1.5' }}>{exp.description}</p>
                     </div>
-                    {exp.period === "Jan/2014 – Dez/2020" && (
-                        <div 
-                            className="d-none d-lg-block rounded-circle" 
-                            style={{ 
-                                width: '25px', 
-                                height: '25px', 
-                                border: '4px solid #293237', 
-                                backgroundColor: '#f0f8ff',
-                                flexShrink: 0,
-                                zIndex: 1,
-                                marginLeft: '60px'
-                            }}
-                        ></div>
-                    )}
-                    </React.Fragment>
-                ))}
-            </div>
-        </div>
+                </Col>
+            ))}
+        </Row>
       </Container>
     </section>
   );
@@ -310,7 +288,6 @@ const Contact = () => {
   return (
     <section id="contato" className="py-5 text-white" style={{ backgroundColor: '#111151' }}>
       <Container>
-        <h2 className="mb-3 text-center">Contato</h2>
         <Row className="justify-content-center align-items-center">
           <Col md={5} className="d-flex justify-content-end align-items-center gap-4 border-end pe-4">
             {PortifolioData.social.map(social => (
