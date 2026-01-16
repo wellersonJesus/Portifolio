@@ -288,7 +288,7 @@ const Contact = () => {
   return (
     <section id="contato" className="py-5 text-white" style={{ backgroundColor: '#111151' }}>
       <Container>
-        <Row className="justify-content-center align-items-center">
+        <Row className="justify-content-center align-items-center mt-4 gy-4">
           <Col md={5} className="d-flex justify-content-end align-items-center gap-4 border-end pe-4">
             {PortifolioData.social.map(social => (
               <a 
