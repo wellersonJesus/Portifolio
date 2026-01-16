@@ -15,7 +15,7 @@ const PortifolioData = {
     address: "Rua Ismar Francisco da Silva 101, CEP: 31-680-420",
     photo: logo,
     aboutTitle: "Sobre Mim",
-    aboutDescription: "Desenvolvedor PHP, atuando no desenvolvimento de aplicações web e back-end escaláveis, seguras e orientadas a resultados. Possuo experiência na criação de APIs REST, integração com bancos de dados PostgreSQL e MySQL, autenticação com JWT e OAuth2 e desenvolvimento de sistemas personalizados. Trabalho desde a análise de requisitos até a entrega final, aplicando boas práticas, organização de código, performance e manutenibilidade, além de integração com interfaces modernas e automação de deploy."
+    aboutDescription: "Desenvolvedor PHP, atuando no desenvolvimento de aplicações web e fullStack escaláveis, seguras e orientadas a resultados. Possuo experiência na criação de APIs REST, integração com bancos de dados PostgreSQL e MySQL, autenticação com JWT e OAuth2 e desenvolvimento de sistemas personalizados. Trabalho desde a análise de requisitos até a entrega final, aplicando boas práticas, organização de código, performance e manutenibilidade, além de integração com interfaces modernas e automação de deploy."
   },
   social: [
     {
