@@ -94,18 +94,18 @@ const PortifolioData = {
 const Header = () => (
   <Navbar bg="light" expand="lg" sticky="top" className="shadow-sm">
     <Container>
-      <Navbar.Brand href="#home" className="d-flex align-items-center">
+      <Navbar.Brand href="#home" className="d-flex align-items-center me-auto" style={{ minWidth: 0 }}>
         <img
           src={devLogo}
           width="40"
           height="40"
-          className="d-inline-block align-top rounded-circle me-2"
+          className="d-inline-block align-top rounded-circle me-2 flex-shrink-0"
           alt={PortifolioData.personal.name}
           style={{ objectFit: 'cover' }}
         />
-        <span className="fw-bold" style={{ color: '#111151' }}>{PortifolioData.personal.name}</span>
+        <span className="fw-bold text-truncate d-none d-sm-block" style={{ color: '#111151' }}>{PortifolioData.personal.name}</span>
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle aria-controls="basic-navbar-nav" className="ms-2" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto">
           <Nav.Link href="#sobre">Sobre Mim</Nav.Link>
