@@ -106,8 +106,8 @@ const Header = () => (
         <span className="fw-bold text-truncate d-none d-sm-block" style={{ color: '#111151' }}>{PortifolioData.personal.name}</span>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="ms-2" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ms-auto">
+      <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+        <Nav className="ms-auto text-end">
           <Nav.Link href="#sobre">Sobre Mim</Nav.Link>
           <Nav.Link href="#experiencia">Experiência</Nav.Link>
           <Nav.Link href="#habilidades">Habilidades</Nav.Link>
@@ -286,9 +286,9 @@ const Contact = () => {
   };
 
   return (
-    <section id="contato" className="py-5 text-white" style={{ backgroundColor: '#111151' }}>
+    <section id="contato" className="py-3 text-white" style={{ backgroundColor: '#111151' }}>
       <Container>
-        <Row className="justify-content-center align-items-center mt-4 gy-4">
+        <Row className="justify-content-center align-items-center gy-3">
           <Col md={5} className="d-flex justify-content-end align-items-center gap-4 border-end pe-4">
             {PortifolioData.social.map(social => (
               <a 
