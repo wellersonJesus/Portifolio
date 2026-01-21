@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: sans-serif;
 }
 
 .App-header {
@@ -18,7 +19,32 @@ main {
 }
 
 footer {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   padding: 2rem;
+  color: var(--white-color);
+}
+
+/* Cores de fundo para as seções */
+#sobre {
+  background-color: var(--white-color);
+}
+
+#habilidades {
+  background-color: var(--color-light);
+  font-family: 'Fredoka', sans-serif;
+}
+
+#experiencia {
+  background-color: var(--color-medium);
+  font-family: 'Fredoka', sans-serif;
+}
+
+#certificacao {
+  background-color: var(--color-dark);
+  font-family: 'Fredoka', sans-serif;
+}
+
+#contato {
+  background-color: var(--primary-color);
   color: var(--white-color);
 }

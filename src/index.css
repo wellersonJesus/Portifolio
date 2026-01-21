@@ -1,7 +1,12 @@
 :root {
-  --primary-color: #111151;
-  --secondary-color: #293237;
+  --primary-color: #293237; /* Dark Slate for Header/Titles */
+  --secondary-color: #37474F; /* Lighter Dark Slate for Footer/Accents */
   --white-color: #ffffff;
+  --color-lightest: #ecfcfe; /* Very light, almost white */
+  --color-light: #cbdbdc; /* Light gray-blue */
+  --color-medium: #abbabb;   /* Medium gray-blue */
+  --color-dark: #8a999a;     /* Darker gray-blue */
+  --color-darkest: #6a7879;  /* Darkest gray-blue */
 }
 
 body {
@@ -11,6 +16,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--white-color);
-  color: var(--secondary-color);
+  background-color: var(--color-lightest);
+  color: var(--color-dark);
+}
+
+/* Estilo base para os cards de certificação */
+.interactive-block, .certification-card, .card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Efeito de hover */
+.interactive-block:hover, .certification-card:hover, .card:hover {
+  transform: translateY(-5px); /* Move o card ligeiramente para cima */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; /* Aumenta a sombra */
 }

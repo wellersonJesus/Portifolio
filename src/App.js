@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Navbar, Nav, Image } from 'react-bootstrap';
-import { Instagram, Linkedin, Youtube } from 'react-bootstrap-icons';
+import { Container, Row, Col, Navbar, Nav, Image, Card, Badge } from 'react-bootstrap';
+import { Instagram, Linkedin, Youtube, BoxArrowUpRight, AwardFill } from 'react-bootstrap-icons';
 import logo from './assets/images/logo.jpg';
 import devLogo from './assets/images/dev.png';
 
@@ -11,8 +11,8 @@ const PortifolioData = {
     name: "Wellerson de Jesus Silva",
     role: "Development | SRE | Software Architect | Software Engineer",
     email: "wellersonjesus46@gmail.com",
-    phone: "+55 (31) 99332-7287",
-    address: "Rua Ismar Francisco da Silva 101, CEP: 31-680-420",
+    phone: "+55 (31) 9 9332-7287",
+    address: "Belo Horizonte - MG, CEP: 31-680-420",
     photo: logo,
     aboutTitle: "Sobre Mim",
     aboutDescription: "Desenvolvedor PHP, atuando no desenvolvimento de aplicações web e fullStack escaláveis, seguras e orientadas a resultados. Possuo experiência na criação de APIs REST, integração com bancos de dados PostgreSQL e MySQL, autenticação com JWT e OAuth2 e desenvolvimento de sistemas personalizados. Trabalho desde a análise de requisitos até a entrega final, aplicando boas práticas, organização de código, performance e manutenibilidade, além de integração com interfaces modernas e automação de deploy."
@@ -80,6 +80,164 @@ const PortifolioData = {
       period: "até Jan/1998"
     }    
   ],
+  educationAndCertifications: [
+    {
+      course: "Configuração e Deploy na nuvem Microsoft Azure Cloud",
+      institution: "Digital Innovation One Inc.",
+      period: "mai. de 2021",
+      credentialId: "56538B74"
+    },
+    {
+      course: "Desenvolvimento Web avançado 2021 com PHP - Laravel - Vue.JS",
+      institution: "Udemy Brasil",
+      period: "mai. de 2021",
+      credentialId: "73d0904570b0"
+    },
+    {
+      course: "Introdução a orquestração de contêineres com Docker",
+      institution: "Digital Innovation One Inc.",
+      period: "mai. de 2021",
+      credentialId: "F3CAE2B6"
+    },
+    {
+      course: "Introdução ao sistema operacional linux",
+      institution: "Udemy Brasil",
+      period: "mai. de 2021",
+      credentialId: "https://alfahelix.com.br/certificados/gerar/certificado.php"
+    },
+    {
+      course: "Terminal Linux",
+      institution: "Udemy Brasil",
+      period: "mai. de 2021",
+      credentialId: null
+    },
+    {
+      course: "Bem-vindo à DIO",
+      institution: "Digital Innovation One Inc.",
+      period: "abr. de 2021",
+      credentialId: "06B9371E"
+    },
+    {
+      course: "Boas-vindas ao Bootcamp Code Anywhere",
+      institution: "Digital Innovation One Inc.",
+      period: "abr. de 2021",
+      credentialId: "0E48BC11"
+    },
+    {
+      course: "Lógica de programação essencial",
+      institution: "Digital Innovation One Inc.",
+      period: "abr. de 2021",
+      credentialId: "11B4B4C7"
+    },
+    {
+      course: "Aprenda a aplicar testes com Java",
+      institution: "Digital Innovation One Inc.",
+      period: "jan. de 2021",
+      credentialId: "3DE3114E"
+    },
+    {
+      course: "Criando aplicações web com Spring Web MVC",
+      institution: "Digital Innovation One Inc.",
+      period: "jan. de 2021",
+      credentialId: "C6D6E96E"
+    },
+    {
+      course: "Desenvolvimento avançado com JavaScript ES6",
+      institution: "Digital Innovation One Inc.",
+      period: "jan. de 2021",
+      credentialId: "CE56459A"
+    },
+    {
+      course: "Desenvolvimento básico em Java",
+      institution: "Digital Innovation One Inc.",
+      period: "jan. de 2021",
+      credentialId: "89CD5089"
+    },
+    {
+      course: "Implementando Collections e Streams com Java",
+      institution: "Digital Innovation One Inc.",
+      period: "jan. de 2021",
+      credentialId: "920A5C93"
+    },
+    {
+      course: "Introdução a JSF para aplicação web",
+      institution: "Digital Innovation One Inc.",
+      period: "jan. de 2021",
+      credentialId: "ED234B78"
+    },
+    {
+      course: "Introdução ao framework Spring Boot",
+      institution: "Digital Innovation One Inc.",
+      period: "jan. de 2021",
+      credentialId: "1B7780C4"
+    },
+    {
+      course: "Introdução à biblioteca jQuery",
+      institution: "Digital Innovation One Inc.",
+      period: "jan. de 2021",
+      credentialId: "39137797"
+    },
+    {
+      course: "JavaScript ES6 essencial",
+      institution: "Digital Innovation One Inc.",
+      period: "jan. de 2021",
+      credentialId: "C67DC118"
+    },
+    {
+      course: "Programação para internet com JavaScript",
+      institution: "Digital Innovation One Inc.",
+      period: "jan. de 2021",
+      credentialId: "485B09F0"
+    },
+    {
+      course: "Trabalhando com Banco de Dados utilizando JDBC e JPA",
+      institution: "Digital Innovation One Inc.",
+      period: "jan. de 2021",
+      credentialId: "8E45D4FC"
+    },
+    {
+      course: "Técnicas avançadas em Angular 8",
+      institution: "Digital Innovation One Inc.",
+      period: "jan. de 2021",
+      credentialId: "093A03C5"
+    },
+    {
+      course: "Introdução ao Angular 8",
+      institution: "Digital Innovation One Inc.",
+      period: "dez. de 2020",
+      credentialId: "492300A7"
+    },
+    {
+      course: "Aplicações avançadas com Angular",
+      institution: "Digital Innovation One Inc.",
+      period: "nov. de 2019",
+      credentialId: "8E291E31"
+    },
+    {
+      course: "Spring Boot Hibernate, rest, ionic, jwt, s3 mysql, mongoDb",
+      institution: "Udemy Brasil",
+      period: "fev. de 2019",
+      credentialId: "FUC-HXBSYXOM"
+    },
+    {
+      course: "Redes de computadores",
+      institution: "Faculdade de Tecnologia Pitagoras",
+      period: "até Dec/2012",
+      credentialId: null
+    },
+    {
+      course: "Ensino médio científico",
+      institution: "Colégio Estadual Central",
+      period: "até Jan/2000",
+      credentialId: null
+    },
+    {
+      course: "Mecânico de Manutenção Maquinas Operatrizes",
+      institution: "SENAI Américo Renné Giannetti",
+      period: "até Jan/1998",
+      credentialId: null
+    }
+  ],
   skills: {
     "Linguagens & Frameworks": ["Node.js", "TypeScript", "JavaScript", "PHP", "Laravel", "Java", "Spring Boot", "React", "Angular", "Bootstrap", "Python"],
     "DevOps & Cloud": ["Docker", "Kubernetes", "Terraform", "Heroku", "Digital Ocean", "CI/CD"],
@@ -111,6 +269,7 @@ const Header = () => (
           <Nav.Link href="#sobre">Sobre Mim</Nav.Link>
           <Nav.Link href="#experiencia">Experiência</Nav.Link>
           <Nav.Link href="#habilidades">Habilidades</Nav.Link>
+          <Nav.Link href="#certificacao">Certificações</Nav.Link>
           <Nav.Link href="#contato">Contato</Nav.Link>
         </Nav>
       </Navbar.Collapse>
@@ -119,7 +278,7 @@ const Header = () => (
 );
 
 const About = () => (
-  <section id="sobre" className="py-5">
+  <section id="sobre" className="py-5" style={{ backgroundColor: '#ffffff' }}>
     <Container>
       <h2 className="text-center mb-4" style={{ color: '#111151' }}>{PortifolioData.personal.aboutTitle}</h2>
       <Row className="align-items-center">
@@ -141,35 +300,64 @@ const About = () => (
   </section>
 );
 
-const Journey = () => (
-  <section id="jornada" className="py-5 text-white" style={{ backgroundColor: '#111151', fontFamily: "'Fredoka', sans-serif" }}>
-    <Container>
-      <h2 className="text-center display-4 mb-5">Jornada de Aprendizado</h2>
-      <div className="position-relative py-4">
-         {/* Linha do tempo (visível apenas em telas médias para cima) */}
-         <div className="d-none d-md-block position-absolute top-50 start-0 w-100 translate-middle-y bg-white" style={{ height: '4px', opacity: 0.5, borderRadius: '2px' }}></div>
-         
-         <Row className="justify-content-center">
-           {[...PortifolioData.education]
-             .sort((a, b) => parseInt(a.period.match(/\d{4}/)?.[0] || 0) - parseInt(b.period.match(/\d{4}/)?.[0] || 0))
-             .map((edu, index) => (
-             <Col key={index} xs={12} md={4} className="text-center mb-5 mb-md-0">
-                <div className="d-inline-flex align-items-center justify-content-center bg-white text-primary rounded-circle shadow mb-3 position-relative z-1" 
-                     style={{ width: '160px', height: '160px', border: '6px solid #293237', color: '#111151' }}>
-                   <div className="d-flex flex-column">
-                      <span className="h2 m-0 fw-bold">{edu.period.match(/\d{4}/)?.[0]}</span>
-                      <span className="small text-muted fw-bold">Conclusão</span>
-                   </div>
-                </div>
-                <h4 className="fw-bold mt-3">{edu.course}</h4>
-                <p className="text-white-50 lead mb-1" style={{fontSize: '1rem'}}>{edu.institution}</p>
-             </Col>
-           ))}
-         </Row>
-      </div>
-    </Container>
-  </section>
-);
+const Journey = () => {
+  const groupedData = PortifolioData.educationAndCertifications.reduce((acc, curr) => {
+    const year = curr.period.match(/\d{4}/)?.[0];
+    if (year) {
+      if (!acc[year]) acc[year] = [];
+      acc[year].push(curr);
+    }
+    return acc;
+  }, {});
+
+  const years = Object.keys(groupedData).sort((a, b) => parseInt(b) - parseInt(a));
+  
+  // Divide os anos em grupos de 3 para criar linhas separadas
+  const chunkedYears = [];
+  for (let i = 0; i < years.length; i += 3) {
+    chunkedYears.push(years.slice(i, i + 3));
+  }
+
+  return (
+    <section id="jornada" className="py-5 text-white" style={{ backgroundColor: '#111151', fontFamily: "'Fredoka', sans-serif" }}>
+      <Container>
+        <h2 className="text-center display-4 mb-5">Jornada de Aprendizado</h2>
+        
+        {chunkedYears.map((chunk, chunkIndex) => (
+          <div key={chunkIndex} className="position-relative mb-5">
+             {/* Linha do tempo (visível apenas em telas médias para cima) */}
+             <div className="d-none d-md-block position-absolute start-0 w-100 bg-white" 
+                  style={{ height: '4px', opacity: 0.5, borderRadius: '2px', top: '80px', zIndex: 0 }}></div>
+             
+             <Row className="justify-content-center">
+               {chunk.map((year) => {
+                 const items = groupedData[year];
+                 const formal = items.find(i => PortifolioData.education.some(e => e.course === i.course));
+                 
+                 let title = formal ? formal.course : (items.length > 1 ? "Cursos e Certificações" : items[0].course);
+                 let subtitle = formal ? formal.institution : (items.length > 1 ? `${items.length} Conclusões` : items[0].institution);
+
+                 return (
+                   <Col key={year} xs={12} md={4} className="text-center mb-5 mb-md-0">
+                      <div className="d-inline-flex align-items-center justify-content-center bg-white text-primary rounded-circle shadow-sm mb-3 position-relative interactive-block" 
+                           style={{ width: '160px', height: '160px', border: '6px solid #293237', color: '#111151', zIndex: 1 }}>
+                         <div className="d-flex flex-column">
+                            <span className="h2 m-0 fw-bold">{year}</span>
+                            <span className="small text-muted fw-bold">Conclusão</span>
+                         </div>
+                      </div>
+                      <h4 className="fw-bold mt-3">{title}</h4>
+                      <p className="text-white-50 lead mb-1" style={{fontSize: '1rem'}}>{subtitle}</p>
+                   </Col>
+                 );
+               })}
+             </Row>
+          </div>
+        ))}
+      </Container>
+    </section>
+  );
+};
 
 const Experience = () => {
   // Usando a ordem original (do mais recente para o mais antigo)
@@ -184,7 +372,7 @@ const Experience = () => {
             {sortedExperiences.map((exp, index) => (
                 <Col key={index} md={6} lg={4} className="d-flex align-items-stretch">
                     <div 
-                        className="position-relative p-4 bg-white rounded-4 shadow-lg w-100" 
+                        className="position-relative p-4 bg-white rounded-4 shadow-sm w-100 interactive-block" 
                         style={{ 
                             border: '4px solid #293237',
                         }}
@@ -243,13 +431,13 @@ const Skills = () => {
   };
 
   return (
-    <section id="habilidades" className="py-5 bg-light" style={{ fontFamily: "'Fredoka', sans-serif" }}>
+    <section id="habilidades" className="py-5" style={{ backgroundColor: '#e9ecef', fontFamily: "'Fredoka', sans-serif" }}>
       <Container>
         <h2 className="text-center mb-5 display-4" style={{ color: '#111151' }}>Habilidades & Competências</h2>
         <Row>
           {Object.keys(PortifolioData.skills).map((category, index) => (
             <Col key={category} md={6} className="mb-4">
-              <div className="h-100 p-4 bg-white rounded-4 shadow-sm border-top border-5" style={{ borderColor: index % 2 === 0 ? '#111151' : '#293237' }}>
+              <div className="h-100 p-4 bg-white rounded-4 shadow-sm border-top border-5 interactive-block" style={{ borderColor: index % 2 === 0 ? '#111151' : '#293237' }}>
                 <h3 className="text-center mb-4 fw-bold" style={{ color: '#293237' }}>{category}</h3>
                 <div className="d-flex flex-wrap justify-content-center gap-3">
                   {PortifolioData.skills[category].map(skill => {
@@ -267,6 +455,46 @@ const Skills = () => {
                   })}
                 </div>
               </div>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </section>
+  );
+};
+
+const Certifications = () => {
+  return (
+    <section id="certificacao" className="py-5" style={{ backgroundColor: '#dbe9f4', fontFamily: "'Fredoka', sans-serif" }}>
+      <Container>
+        <h2 className="text-center mb-5 display-4" style={{ color: '#111151' }}>Educação e Certificações</h2>
+        <Row className="g-3">
+          {PortifolioData.educationAndCertifications.map((cert, index) => (
+            <Col key={index} md={6} lg={4}>
+              <Card className="h-100 shadow-sm border-0 rounded-3">
+                <Card.Body className="d-flex flex-column">
+                  <div className="d-flex justify-content-between align-items-start mb-2">
+                    <Badge bg="secondary">{cert.period}</Badge>
+                    <AwardFill size={26} style={{ color: '#D4AF37', filter: 'drop-shadow(1px 1px 0px rgba(0,0,0,0.1))' }} />
+                  </div>
+                  <Card.Title className="fw-bold text-dark" style={{ fontSize: '1.1rem' }}>{cert.course}</Card.Title>
+                  <Card.Subtitle className="mb-3 text-muted">{cert.institution}</Card.Subtitle>
+                  
+                  <div className="mt-auto pt-3 border-top">
+                    {cert.credentialId ? (
+                      cert.credentialId.startsWith('http') ? (
+                        <a href={cert.credentialId} target="_blank" rel="noopener noreferrer" className="text-decoration-none d-flex align-items-center gap-2" style={{ color: '#111151' }}>
+                          <BoxArrowUpRight size={14} /> Ver Credencial
+                        </a>
+                      ) : (
+                        <small className="text-muted font-monospace">ID: {cert.credentialId}</small>
+                      )
+                    ) : (
+                      <small className="text-muted fst-italic">Concluído</small>
+                    )}
+                  </div>
+                </Card.Body>
+              </Card>
             </Col>
           ))}
         </Row>
@@ -323,6 +551,7 @@ function App() {
         <Journey />
         <Experience />
         <Skills />
+        <Certifications />
       </main>
       <Contact />
     </div>
